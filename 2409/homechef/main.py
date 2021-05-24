@@ -26,7 +26,7 @@ def main():
             return
         elif num == '4':
             # 전체 레시피 보여주기
-            return
+            recipebook_204.show_recipe()
         elif num == '5':
             break
         else:

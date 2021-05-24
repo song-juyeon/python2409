@@ -21,5 +21,30 @@ class RecipeBook:
         # 레시피리스트에 레시피 추가
         self.recipe_list.append(new_recipe)
 
+    def show_recipe(self):
+        for index, recipe in enumerate(self.recipe_list):
+            print(f'{index + 1} ')
+            print(recipe)
+
     def __str__(self):
         pass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
