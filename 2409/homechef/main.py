@@ -1,3 +1,5 @@
+from recipebook import RecipeBook       # recipebook라는 파일에서 RecipeBook클래스를 사용한다.
+
 # 레시피 검색하기, 레시피 보여주기,
 def print_menu():
     print('1. 레시피 검색하기')
@@ -10,14 +12,15 @@ def print_menu():
 
 
 def main():
-    num = print_menu()
+    recipebook_204 = RecipeBook()
     while True:
+        num = print_menu()
         if num == '1':
             # 레시피 검색하기
             return
         elif num == '2':
             # 레시피 추가하기
-            return
+            recipebook_204.add_recipe()
         elif num == '3':
             # 재료로 검색하기
             return
