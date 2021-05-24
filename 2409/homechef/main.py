@@ -17,7 +17,7 @@ def main():
         num = print_menu()
         if num == '1':
             # 레시피 검색하기
-            return
+            recipebook_204.search_recipe()
         elif num == '2':
             # 레시피 추가하기
             recipebook_204.add_recipe()
