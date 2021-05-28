@@ -57,8 +57,8 @@ class RecipeBook:
                 all_ingredient.add(ingredient)
 
         # 모든 재료를 보여주자
-            for index, ingredient in enumerate(all_ingredient):
-                print(f'{index + 1}. {ingredient}')
+        for index, ingredient in enumerate(all_ingredient):
+            print(f'{index + 1}. {ingredient}')
 
 
 
