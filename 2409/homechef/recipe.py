@@ -43,6 +43,6 @@ class Recipe:
         self.set_contents()
         self.set_video()
     
-카레 = Recipe('카레')
-카레.set_recipe()
-print(카레)
+#카레 = Recipe('카레')
+#카레.set_recipe()
+#print(카레)
