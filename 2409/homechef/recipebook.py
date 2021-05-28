@@ -3,6 +3,7 @@ from recipe import Recipe
 class RecipeBook:
     def __init__(self):
         self.recipe_list = []
+        self.init_recipe()
 
     def add_recipe(self):
         # 추가할 레시피 이름 입력받기
@@ -73,6 +74,24 @@ class RecipeBook:
                 # 해당 레시피를 모두 보여주자.
                 print(recipe)
 
+    def init_recipe(self):
+        떡볶이 = Recipe('떡볶이')
+        떡볶이.people = 2
+        떡볶이.video = 'youtube.com'
+        떡볶이.ingredient = {'떡':'200', '고추장':'20', '어묵':'3', '물':'50', '소세지': '5'}
+        self.recipe_list.append(떡볶이)
+        카레 = Recipe('카레')
+        카레.people = 4
+        카레.video = 'youtube.com'
+        카레.ingredient = {'카레가루': '200', '감자': '20', '당근': '30', '물': '50'}
+        self.recipe_list.append(카레)
+        파스타 = Recipe('파스타')
+        파스타.people = 3
+        파스타.video = 'youtube.com'
+        파스타.contents = '맛있게드세요'
+        파스타.ingredient = {'면': '200', '토마토소스': '20', '물': '30', '소세지': '5'}
+        self.recipe_list.append(파스타)
+    
     def __str__(self):
         pass
 
