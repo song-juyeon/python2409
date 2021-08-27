@@ -50,7 +50,7 @@ class Drink:
         self.set_sugar()
 
     def __str__(self):
-        return f'이름: {self.name}\t가격: {self.price}원\t컵사이즈: {Drink._CUPS[self.cup]}\t얼름량: {Drink._ICES[self.ice]}\t당도: {Drink._SUGARS[self.sugar]}'
+        return f'이름: {self.name}\t가격: {self.price}원\t컵사이즈: {Drink._CUPS[self.cup]}\t얼음량: {Drink._ICES[self.ice]}\t당도: {Drink._SUGARS[self.sugar]}'
 
 class Coffee(Drink):
     pass

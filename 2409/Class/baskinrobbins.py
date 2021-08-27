@@ -30,17 +30,17 @@ class Order:
         self.init_menu()
         # 주문한 메뉴
         self.order_menu = []
-    def __str__(self):
-        pass
     def set_cateries(self):
         for index, category in enumerate(Order._CATEGORIES):
             print(index+1, category)
         category_num = input('종류를 골라주세요: ')
         self.category = int(category_num)
+
     def init_menu(self):
         self.menu.append(Icecream('뉴욕치즈케이크'))
         self.menu.append(Icecream('레인보우샤베트'))
         self.menu.append(Icecream('아빠는딸바봉'))
+
     def show_menu(self):
         for index, icecream in enumerate(self.menu):
             print(f'{index+1}. {icecream}')

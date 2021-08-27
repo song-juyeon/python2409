@@ -109,14 +109,11 @@ def get_major(student_number):
     classroom = int(student_number[1])
     return grade, majors[classroom-1]
 
-grade, major = get_major('2100')
-print(major, grade)
-
 
 # Quiz2-3. 인수의 개수에 상관없이 인수로 숫자를 여러개 넣고, 함수를 호출하면 그 인수들의 평균을 구하여 리턴하는 함수 만들기
 # <함수 호출>
 # print(average(10, 20, 30)) #20.0
-# print(average(4, 23)) #13.5
+# print(average(4, 23)) #13.5)
 
 def average(*number):
     return sum(number)/len(number)

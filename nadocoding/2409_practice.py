@@ -875,3 +875,62 @@ houses.append(house3)
 print("총 {0}대의 매물이 있습니다.".format(len(houses)))
 for house in houses:
     house.show_detail()
+
+print('--------------------------------------------------')
+# --------------------------------------------------
+# 8/22까지
+# # 모듈
+# import theater_module
+# theater_module.price(3)             # 3명에서 영화 보는 가격
+# theater_module.price_morning(4)     # 조조 영화로 4명에서 영화를 보는 가격
+# theater_module.price_soldier(5)     # 군인 5명이 영화보는 가격
+
+# import  theater_module as mv
+# mv.price(3)
+# mv.price_morning(4)
+# mv.price_soldier(5)
+
+# from  theater_module import *
+# price(3)
+# price_morning(4)
+# price_soldier(5)
+
+# from  theater_module import price, price_morning
+# price(5)
+# price_morning(6)
+
+from theater_module import  price_soldier as price
+price(5)
+
+print('--------------------------------------------------')
+
+#패키지
+# import travel.thailand
+# trip_to = travel.thailand.ThailandPackage()
+# trip_to.detail()
+#
+# from travel.thailand import ThailandPackage
+# trip_to = ThailandPackage()
+# trip_to.detail()
+
+from travel import vietnam
+trip_to = vietnam.VietnamPackage()
+trip_to.detail()
+
+print('--------------------------------------------------')
+
+# __all__ / 모듈 직접 실행
+
+from travel import *
+# trip_to = vietnam.VietnamPackage()
+trip_to = thailand.ThailandPackage()
+trip_to.detail()
+
+print('--------------------------------------------------')
+
+# 패키지, 모듈위치
+
+import inspect
+import random
+print(inspect.getfile(random))
+print(inspect.getfile(thailand))
