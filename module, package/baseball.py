@@ -1,5 +1,6 @@
+from baseball_game_engine import make_answer, check
+
 answer = make_answer()
-print(answer)
 
 # 반복
 while True:
