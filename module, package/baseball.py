@@ -3,6 +3,7 @@ from custom_error import InvalidLengthError
 
 answer = make_answer()
 
+count = 0
 # 반복
 while True:
     # 질문
@@ -17,10 +18,12 @@ while True:
         # raise InvalidLengthError('정답의 길이와 다름니다.)
         print(f'정답의 길이와 다름니다. {len(answer)}자리 수를 입력하세요')
         continue
+
     # 결과 판정
     strike, ball = check(guess, answer)
+    count += 1
     # 출력
-    print(f'{guess}\tstrike: {strike}, ball: {ball}')
+    print(f'{guess}\tstrike: {strike}, ball: {ball}\t {count}try')
     # 정답 == 숫자, 반복 종료
     if answer == guess:
         print('정답입니다.')
