@@ -5,12 +5,14 @@ class TictactoeGameEngine:
         self.SIZE = 3
 
     def show_board(self):
-        print('  '.join(self.board[0:3]))
-        print('  '.join(self.board[3:6]))
-        print('  '.join(self.board[6:9]))
+        # print('  '.join(self.board[0:3]))
+        # print('  '.join(self.board[3:6]))
+        # print('  '.join(self.board[6:9]))
 
-        # for i,v in enumerate(self.board):
-        #     print(v + ' ', end='')
+        for i,v in enumerate(self.board):
+            print(v + ' ', end='')
+            if i % 3 == 2:
+                print()
 
 
     def set(self, row, col):
